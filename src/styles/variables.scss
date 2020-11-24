@@ -1,0 +1,29 @@
+// primitive sizes
+$fontSize: 16px;
+
+// primitive colors
+$color1: #012345;
+$oposite1: #fefefe;
+$background: #6789ab;
+$navigationPanelsBackgroundError: #5c0505;
+$backgroundError: #d87373;
+$oposite1Error: #fefefe;
+
+
+// derivated sizes
+
+$smallModeH: 800px;
+$smallModeW: 900px;
+$smallPadding: .3rem;
+$smallRadius: $smallPadding;
+
+$collapsedMenu: .5rem;
+
+$topicWidth: 24rem;
+$menuHeight: 3rem;
+$menuWidth: 20rem;
+
+// derivated colors
+
+$navigationPanelsBackground: $color1;
+$dim: #00000042;

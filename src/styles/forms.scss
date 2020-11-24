@@ -1,0 +1,53 @@
+.dialog {
+  --dialogColor: #{$oposite1};
+  --dialogBackground: #{$navigationPanelsBackground};
+  --dialogInputBackground: #{$background};
+
+  &.hasErrors {
+    --dialogColor: #{$oposite1};
+    --dialogBackground: #{$navigationPanelsBackgroundError};
+    --dialogInputBackground: #{$backgroundError};
+  }
+
+  color: var(--dialogColor);
+  background-color: var(--dialogBackground);
+  h1 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  label {
+    margin-bottom: .1rem;
+  }
+  input {
+    border: none;
+    background: var(--dialogInputBackground);
+    color: black;
+    border-radius: $smallRadius;
+    box-shadow: 0 0 1px #000;
+    padding: .5rem;
+    margin-bottom: 1rem;
+  }
+  button {
+
+    border: none;
+    background: transparent;
+    color: var(--dialogColor);
+    padding: .5rem;
+    border-radius: $smallRadius;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    box-shadow: 0 0 1px var(--dialogColor);
+    &:hover {
+      box-shadow: 0 0 0 2px var(--dialogColor);
+    }
+    &:active {
+      background: var(--dialogColor);
+      color: $navigationPanelsBackground;
+      }
+
+    &:disabled {
+      pointer-events: none;
+      filter: brightness(50%);
+    }
+  }
+}

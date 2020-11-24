@@ -1,0 +1,22 @@
+{
+  "name": "Demo site",
+  "authenticate": {
+    "v1": "/remote/authenticate"
+  },
+  "messaging": {
+    "v1": {
+      "chats": "/api/public/messaging/chats",
+      "send": "/api/public/messaging/send"
+    }
+  },
+  "syndication": {
+    "v1": {
+      "topic": "/api/public/messaging/send"
+    }
+  },
+  "rating": {
+    "v1": {
+      "like": "/api/public/like"
+    }
+  }
+}

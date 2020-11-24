@@ -1,0 +1,43 @@
+#NewPost {
+  margin: 1rem;
+  padding: .7rem;
+  background-color: $background;
+  color: $color1;
+  border-radius: $smallRadius;
+  text-align: right;
+  box-shadow: 0 0 10px #0006;
+
+  textarea {
+    width: 100%;
+    resize: none;
+    padding: $smallPadding;
+    border: none;
+    border-radius: $smallRadius;
+    box-sizing: border-box;
+  }
+
+  button {
+
+    border: none;
+    background: $navigationPanelsBackground;
+    color: $oposite1;
+    padding: .5rem;
+    border-radius: $smallRadius;
+    margin-top: .5rem;
+    margin-left: 1rem;
+    cursor: pointer;
+    box-shadow: 0 0 1px var(--dialogColor);
+    &:hover {
+      box-shadow: 0 0 0 2px var(--dialogColor);
+    }
+    &:active {
+      background: var(--dialogColor);
+      color: $navigationPanelsBackground;
+      }
+
+    &:disabled {
+      pointer-events: none;
+      filter: brightness(50%);
+    }
+  }
+}

@@ -1,0 +1,12 @@
+@import './variables.scss';
+
+body {
+  font-size: $fontSize;
+}
+
+@import './fonts.scss';
+@import './forms.scss';
+@import './Nav.scss';
+@import './CurrentUser.scss';
+@import './Login.scss';
+@import './newPost.scss';
