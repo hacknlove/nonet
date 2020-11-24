@@ -1,0 +1,30 @@
+.verticalMenu {
+  --dialogColor: #{$oposite1};
+  --dialogBackground: #{$navigationPanelsBackground};
+  --dialogInputBackground: #{$background};
+  display: flex;
+  flex-direction: column;
+  button {
+    background: transparent;
+    border: none;
+    margin: $smallPadding;
+    color: var(--dialogColor);
+    cursor: pointer;
+    border-radius: $smallRadius;
+    padding: $smallPadding;
+    &:hover {
+      box-shadow: 0 0 0 2px $oposite1;
+    }
+    &:active {
+      background: var(--dialogColor);
+      color: $navigationPanelsBackground;
+      }
+
+    &:disabled {
+      pointer-events: none;
+      filter: brightness(50%);
+    }
+
+  }
+
+}
